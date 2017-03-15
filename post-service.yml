@@ -2,12 +2,19 @@ server:
     port: ${port:8085}
     servlet-path: /api/v1
 
+ 
     
 mybatis: 
     type-aliases-package: com.dx.guba.post.service.internal.model
     mapper-locations: classpath:/mybatis-mappers/*
     
 spring: 
+  rabbitmq:
+    host: localhost
+    username: guba
+    password: guba
+    virtual-host: /dev 
+
   datasource: 
     url: jdbc:mysql://localhost:3306/stock?useSSL=false
     username: root
