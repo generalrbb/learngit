@@ -1,6 +1,5 @@
 server: 
     port: ${port:8085}
-    servlet-path: /api/v1
 
 spring: 
   rabbitmq:
