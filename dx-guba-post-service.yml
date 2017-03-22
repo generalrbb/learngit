@@ -8,9 +8,11 @@ spring:
     password: guba
     virtual-host: /dev 
   datasource: 
-    url: jdbc:mysql://localhost:3306/stock?useSSL=false
-    username: root
-    password: 123456
+    url: jdbc:mysql://192.168.18.157:3306/guba?useSSL=false
+    username: all
+    password: 112233
     driver-class-name: com.mysql.jdbc.Driver
 
-  
+mybatis: 
+    type-aliases-package: com.dx.guba.post.service.internal.model
+    mapper-locations: classpath:/mybatis-mappers/* 
